@@ -25,7 +25,11 @@ public class Util extends Hooks {
         public static void Screenshots() throws IOException {
             Date fecha = new Date();
             SimpleDateFormat formato = new SimpleDateFormat("ddMMyyyy_HHmmss");
+<<<<<<< HEAD
+            String path = "\test-output";
+=======
             String path = "test-output";
+>>>>>>> branch 'master' of https://github.com/grasshopper7/ExtentReport
             String nombre = formato.format(fecha) + "_screenshot.jpg";
             File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(file, new File(path + nombre));
